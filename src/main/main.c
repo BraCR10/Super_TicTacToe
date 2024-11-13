@@ -3,7 +3,7 @@
 // Main function
 void
 main (int    argc,
-      char *argv)
+      char **argv)
 {
   interface_call(argc,argv);
 }
