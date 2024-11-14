@@ -11,6 +11,7 @@ int closeWindow() {// this function is called when the user presses the close bu
 
 void interface_call(int argc, char **argv){
     GtkBuilder *builder;
+    GtkBut
     const char *glade_path = "src/interface/interface.glade";
 
     // Initialize GTK
@@ -32,6 +33,7 @@ void interface_call(int argc, char **argv){
     gtk_builder_connect_signals(builder, NULL);
 
     // show the window
+     gtk_window_set_default_size(GTK_WINDOW(window), 1000, 800);
     gtk_widget_show_all(window);
 
     // glade loop
