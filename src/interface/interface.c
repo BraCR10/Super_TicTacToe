@@ -10,11 +10,9 @@ GtkWidget *main_grid;
 int closeWindow() {// this function is called when the user presses the close button in the window
     gtk_main_quit(); 
 }
-
-Button*  button_clicked(GtkWidget *button, gpointer data) {
+void button_clicked(GtkWidget *button, gpointer data) {
     Button* btn = (Button *)data;
-    printf("Button clicked at row: %d, col: %d, grid: %d\n", btn->row, btn->col,btn->gridNum);
-    return btn;
+    int Offset =btn->row+btn->col*3+btn->gridNum*9;
 }
 void interface_call(int argc, char **argv){
     GtkBuilder *builder;
