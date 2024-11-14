@@ -1,6 +1,6 @@
 #include <gtk/gtk.h>
 #include <stdio.h>
-#include "button.h"
+#include <c_utils.h>
 
 GtkWidget *window;
 GtkWidget *main_grid;
@@ -10,10 +10,7 @@ GtkWidget *main_grid;
 int closeWindow() {// this function is called when the user presses the close button in the window
     gtk_main_quit(); 
 }
-void button_clicked(GtkWidget *button, gpointer data) {
-    Button* btn = (Button *)data;
-    int Offset =btn->row+btn->col*3+btn->gridNum*9;
-}
+
 void interface_call(int argc, char **argv){
     GtkBuilder *builder;
     Button *buttons[ROWS][COLS];//matriz for each space in the main_grid

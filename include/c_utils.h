@@ -1,10 +1,12 @@
-#ifndef BUTTON_H
-#define BUTTON_H
+#ifndef C_UTILS_H
+#define C_UTILS_H
 typedef struct button{
     GtkWidget *buttonObj;
     int row;  
     int col; 
     int gridNum; 
 } Button;
+
+void button_clicked(GtkWidget *widget, gpointer data); 
 
 #endif
