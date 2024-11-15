@@ -7,7 +7,8 @@ EXEC_NAME="super_tic_tac_toe.exe"
 C_FILES="src/main.c 
         src/interface/interface.c 
         src/c_functions/buttons_actions.c 
-        src/c_functions/record_movement.c"
+        src/c_functions/record_movement.c
+        src/c_functions/check_button.c"
 
 nasm -f elf32 src/asm_functions/search_position.asm
 nasm -f elf32 src/asm_functions/memory_setup.asm

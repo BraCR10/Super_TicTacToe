@@ -12,4 +12,7 @@ void button_clicked(GtkWidget *widget, gpointer data);
 
 int record_movement(int offset);
 
+void check_button(gpointer data,int player);
+
+void lock_unlock_buttons(int gridNum);
 #endif
