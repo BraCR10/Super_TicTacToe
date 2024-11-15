@@ -9,11 +9,11 @@ C_FILES="src/main.c
         src/c_functions/buttons_actions.c 
         src/c_functions/record_movement.c"
 
-nasm -f elf32 src/asm_functions/memory_managment.asm
+nasm -f elf32 src/asm_functions/search_position.asm
 nasm -f elf32 src/asm_functions/memory_setup.asm
             
 
-NASM_OBJECTS="src/asm_functions/memory_managment.o
+NASM_OBJECTS="src/asm_functions/search_position.o
               src/asm_functions/memory_setup.o"
 
 gcc -m32 -I include -o $EXEC_NAME $C_FILES $NASM_OBJECTS $(pkg-config --cflags --libs gtk+-3.0)

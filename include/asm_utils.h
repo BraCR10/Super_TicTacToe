@@ -5,7 +5,6 @@
   - the first parameter is the offset of the button clicked
   - the second parameter is the variable to say who play
 */
-extern void memory_managment(int,int*);
-
+extern void search_position(int offset, int *player);
 extern void memory_setup();
 #endif
