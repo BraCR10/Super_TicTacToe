@@ -1,5 +1,6 @@
 #Dependencies: gtk+-3.0
 # sudo apt update
+# sudo apt install grub-efi-amd64-signed
 # sudo apt install libgtk-3-dev:i386
 # sudo apt install libgdk-pixbuf2.0-dev:i386 libglib2.0-dev:i386 libpango1.0-dev:i386 libcairo2-dev:i386
 EXEC_NAME="super_tic_tac_toe.exe"
