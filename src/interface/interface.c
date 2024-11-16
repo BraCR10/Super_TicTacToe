@@ -22,6 +22,8 @@ void lock_unlock_buttons(int gridNum) {
     GtkWidget *gridAux;//a pointer to the grid
     GtkWidget *button;//a pointer to the button
     bool lock = TRUE;// a flag to lock a unlock the buttons
+
+
     for (int grid = 0; grid < 9; grid++) {//loop to lock or unlock the buttons
 
         if (grid != gridNum) //if the grid is not the grid selected
@@ -39,6 +41,7 @@ void lock_unlock_buttons(int gridNum) {
             }
         }
     }
+   
 }
 void interface_call(int argc, char **argv){
 

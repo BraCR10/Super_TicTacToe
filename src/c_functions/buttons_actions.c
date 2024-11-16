@@ -9,7 +9,7 @@ void button_clicked(GtkWidget *button, gpointer data) {
 
     int i = record_movement(Offset);//get the player and record the movement in asm
 
-    check_button(data,i);//check the button
+    check_button(data,i,(btn->col*3)+btn->row);//check the button
 
-    lock_unlock_buttons((btn->col*3)+btn->row);//update the buttons
+    
 }
