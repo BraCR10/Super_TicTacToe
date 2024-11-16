@@ -21,11 +21,11 @@ C_OBJECTS="c_objects/main.o
         c_objects/check_button.o"
         
 
-gcc -m32 -c -I include -o c_objects/interface.o src/interface/interface.c $(pkg-config --cflags --libs gtk+-3.0)
-gcc -m32 -c -I include -o c_objects/buttons_actions.o src/c_functions/buttons_actions.c $(pkg-config --cflags --libs gtk+-3.0)
-gcc -m32 -c -I include -o c_objects/check_button.o src/c_functions/check_button.c $(pkg-config --cflags --libs gtk+-3.0)
+gcc  -c -I include -o c_objects/interface.o src/interface/interface.c $(pkg-config --cflags --libs gtk+-3.0)
+gcc  -c -I include -o c_objects/buttons_actions.o src/c_functions/buttons_actions.c $(pkg-config --cflags --libs gtk+-3.0)
+gcc  -c -I include -o c_objects/check_button.o src/c_functions/check_button.c $(pkg-config --cflags --libs gtk+-3.0)
 
-gcc -m32 -o $EXEC_NAME $C_OBJECTS $NASM_OBJECTS  $(pkg-config --cflags --libs gtk+-3.0) -rdynamic
+#gcc -m32 -o $EXEC_NAME $C_OBJECTS $NASM_OBJECTS  $(pkg-config --cflags --libs gtk+-3.0) -rdynamic
 
 
-./$EXEC_NAME
+#./$EXEC_NAME
