@@ -1,8 +1,6 @@
 #Dependencies: gtk+-3.0
 # sudo apt update
-#sudo apt install python3.12-dev
 # sudo apt install libgtk-3-dev:i386  g++-multilib gcc-multilib
-# sudo apt install libgdk-pixbuf2.0-dev:i386 libglib2.0-dev:i386 libpango1.0-dev:i386 libcairo2-dev:i386 //optional 
 EXEC_NAME="super_tic_tac_toe.exe"
 
 nasm -f elf32 src/asm_functions/search_position.asm -o asm_objects/search_position.o
