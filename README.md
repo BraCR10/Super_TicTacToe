@@ -1,4 +1,5 @@
 # Super Tic Tac Toe
+This game was developed as project 2 of computer architecture course at the Instituto Tecnológico de Costa Rica (TEC).
 
 **Super Tic Tac Toe** is an enhanced version of the classic **Tic Tac Toe** game, where each cell of the main board is a smaller **sub Tic Tac Toe** board. Players take turns playing on the smaller boards, and the goal is to align three smaller boards in a row to win the main game. This project combines graphical elements using **C**, [GTK](https://www.gtk.org/), and [GLADE](https://glade.gnome.org/), with the underlying game logic and memory management handled in **Assembly(NASM 64-bit)**, using linked functions for integration.
 
